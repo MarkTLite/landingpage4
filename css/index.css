@@ -6,10 +6,10 @@
 }
 section{
     height: fit-content;
-    padding: 40px 8vw;
+    padding: 40px 6vw;
 }
 header{
-    padding: 20px 8vw;
+    padding: 20px 6vw;
     background-color: black;
     height: fit-content;
 }
@@ -423,4 +423,45 @@ nav{
 /* ################### COMPANIES SECTION ############## */
 .companies{
     display: flex;
+}
+
+/* ######################## FOOTER ################################  */
+footer{
+    padding: 40px 6vw;
+    background-color: midnightblue;
+}
+.footer__top{
+    display: flex;
+    margin-bottom: 40px;
+}
+.footer__div1{
+    flex: 0.25;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+}
+.footer__div2{
+    flex: 0.15;
+}
+.footer__div2 h3{
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.footer__div2 ul{
+    color: #aaa;
+    list-style: none;
+    line-height: 30px;
+}
+.footer__div3{
+    flex: 0.15;
+    margin-right: 60px;
+}
+.footer__div3 h3{
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.footer__div4{
+    flex: 0.6;
 }

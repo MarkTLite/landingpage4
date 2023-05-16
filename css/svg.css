@@ -1,0 +1,14 @@
+.svg-div{
+    height: fit-content;
+    border: 1px solid red;
+}
+svg{
+    border: 1px solid green;
+    stroke: black;
+    fill: none;
+    height: 39rem;
+}
+path{
+    stroke-width: 2px;
+    
+}

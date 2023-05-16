@@ -1,0 +1,617 @@
+/* CSS FOR LARGE DEVICES - ABOVE 1500px*1.3 */
+
+/* New Concepts Applied here for better code 
+    -- Some bits learned of Mobile First Design 
+    -- More of generalized styling to implement more of DRY, theming and other benefits.
+*/
+
+@media screen and (min-width: 1500px) {
+
+    /* ####################### GENERAL STYLES ###################### */
+    section {
+        height: fit-content;
+        padding: calc(2.5rem*1.3) calc(12rem*1.3);
+    }
+
+    header {
+        padding: calc(1.3rem*1.3) calc(12rem*1.3);
+        background-color: black;
+        height: fit-content;
+    }
+    h1{
+        background-color: #fff;
+        font-size: calc(4rem*1.3);
+        margin-bottom: calc(2.5rem*1.3);
+        font-weight: 600;
+        width: calc(30rem*1.3);
+    }
+    
+    /* ####################### NAV SECTION ############### */
+    nav {
+        display: flex;
+        background-color: purple;
+    }
+
+    .nav__div1 {
+        flex: 0.3;
+        color: #fff;
+        font-size: calc(1.9rem*1.3);
+        font-weight: 600;
+    }
+
+    .nav__links {
+        flex: 1;
+        color: #fff;
+        display: flex;
+        background-color: orange;
+    }
+
+    .nav__links ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+
+    .nav__links ul li {
+        margin-right: calc(2.5rem*1.3);
+        font-weight: 600;
+        font-size: calc(0.9rem*1.3);
+    }
+
+    .nav__buttons {
+        flex: 0.5;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .nav__buttons button {
+        margin-left: calc(1.3rem*1.3);
+        padding: calc(0.6rem*1.3) calc(1.3rem*1.3);
+        border: 1px solid green;
+        font-size: calc(0.75rem*1.3);
+        color: white;
+        background-color: transparent;
+    }
+
+    /* ####################### HERO SECTION ############# */
+    .hero-section {
+        background-color: #535353;
+        height: fit-content;
+    }
+
+    .hero-section h1 {
+        background-color: #fff;
+        font-size: calc(3.4rem*1.3);
+        margin-bottom: calc(2.5rem*1.3);
+        width: calc(25rem*1.3);
+        margin-top: calc(8.4rem*1.3);
+    }
+
+    .hero-section__search-input {
+        display: flex;
+        align-items: center;
+        margin-bottom: calc(7.5rem*1.3);
+    }
+
+    .hero-section__search-input div {
+        background-color: black;
+        height: fit-content;
+        padding: calc(0.6rem*1.3) calc(1.3rem*1.3);
+        margin-right: calc(1.3rem*1.3);
+    }
+
+    .hero-section__search-input div input {
+        height: calc(3.75rem*1.3);
+        width: calc(21.8rem*1.3);
+    }
+
+    ::placeholder {
+        color: #535353;
+        font-size: calc(0.9rem*1.3);
+    }
+
+    .hero-section__search-input button {
+        color: #fff;
+        font-size: calc(0.75rem*1.3);
+        background-color: green;
+        border: 0px;
+        width: calc(7.5rem*1.3);
+        height: calc(3.75rem*1.3);
+    }
+
+    /* ################### ACHIEVED SECTION ############### */
+    .achieved-section {
+        /* background-color: #ccc; */
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .achieved-section__div1 h4 {
+        color: green;
+        font-size: calc(0.9rem*1.3);
+        margin-bottom: calc(0.3rem*1.3);
+        margin-top: calc(1.3rem*1.3);
+    }
+
+    .achieved-section__div1 p {
+        color: purple;
+        font-size: calc(1.9rem*1.3);
+        font-weight: 600;
+
+    }
+
+    .divider {
+        height: calc(3.1rem*1.3);
+        width: 1px;
+        background-color: #535353;
+        height: calc(6.25rem*1.3);
+        margin: 0px calc(2.5rem*1.3) 0px calc(1.3rem*1.3);
+    }
+
+    /* ####################### RECOMMENDED SECTION ############### */
+    .recommended-section {
+        background-color: #535353;
+    }
+
+    .recommended__slider-top {
+        display: flex;
+        justify-content: space-between;
+        margin-top: calc(3.1rem*1.3);
+    }
+
+    .recommended__slider-top h2 {
+        color: purple;
+        font-size: calc(3.1rem*1.3);
+        width: calc(25rem*1.3);
+        background-color: #fff;
+        margin-bottom: calc(2.5rem*1.3);
+    }
+
+    .recommended__slider-top div button {
+        padding: calc(1.3rem*1.3) calc(2.5rem*1.3);
+        background-color: green;
+        border: 0px;
+        margin-left: 1px;
+    }
+
+    .recommended__slider-top div {
+        display: flex;
+        align-items: center;
+    }
+
+    .recommended__courses-slide {
+        display: flex;
+        justify-content: center;
+    }
+
+    .recommended__course-div {
+        padding: calc(0.6rem*1.3);
+        border: 1px solid #000;
+        background-color: #fff;
+
+    }
+
+    .recommended__image {
+        background-color: #000;
+        height: calc(12.5rem*1.3);
+        width: calc(18.75rem*1.3);
+    }
+
+    .recommended__logo {
+        background-color: aqua;
+        width: calc(3.1rem*1.3);
+        height: calc(3.1rem*1.3);
+    }
+
+    .recommended__details h3 {
+        margin-top: calc(1.3rem*1.3);
+        margin-bottom: calc(1.3rem*1.3);
+        color: purple;
+        font-size: calc(1.56rem*1.3);
+        width: calc(12.5rem*1.3);
+    }
+
+    .recommended__details p {
+        margin-bottom: calc(1.3rem*1.3);
+        color: #535353;
+        font-size: calc(0.9rem*1.3);
+
+    }
+
+    .recommended__details div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* ################## TOP CATEGORIES ################ */
+    .top-categories {
+        background-color: black;
+        padding-top: calc(5rem*1.3);
+    }
+
+    .top-categories h2 {
+        color: purple;
+        font-size: calc(3.1rem*1.3);
+        background-color: #fff;
+        width: calc(15.6rem*1.3);
+        margin-bottom: calc(2.5rem*1.3);
+    }
+
+    .top-categries__grid-div {
+        display: grid;
+        grid-template-columns: calc(15.6rem*1.3) calc(15.6rem*1.3) calc(15.6rem*1.3) calc(15.6rem*1.3);
+        grid-template-rows: calc(12.5rem*1.3) calc(12.5rem*1.3);
+        gap: calc(1.3rem*1.3);
+    }
+
+    .top-categries__card {
+        background-color: #fff;
+
+    }
+
+    .top-categries__card img {
+        background-color: orange;
+        width: calc(3.1rem*1.3);
+        height: calc(3.1rem*1.3);
+        margin-bottom: calc(1.3rem*1.3);
+    }
+
+    .top-categries__card h3 {
+        color: midnightblue;
+
+    }
+
+    /* ################### SAMPLE COURSE ###################### */
+    .sample-course {
+        margin-top: calc(5rem*1.3);
+        background-color: purple;
+        display: flex;
+        padding: 0px;
+    }
+
+    .sample-course__div1 {
+        flex: 1;
+        background-color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sample-course__play1 {
+        width: calc(9.4rem*1.3);
+        height: calc(9.4rem*1.3);
+        border-radius: calc(9.4rem*1.3);
+        background-color: rgba(255, 255, 255, 0.08);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sample-course__play2 {
+        width: calc(8.1rem*1.3);
+        height: calc(8.1rem*1.3);
+        border-radius: calc(8.1rem*1.3);
+        background-color: rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sample-course__play3 {
+        width: calc(6.25rem*1.3);
+        height: calc(6.25rem*1.3);
+        border-radius: calc(6.25rem*1.3);
+        background-color: rgba(255, 255, 255, 1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sample-course__div2 {
+        flex: 1;
+        background-color: midnightblue;
+        padding-left: calc(5rem*1.3);
+    }
+
+    .sample-course__div2 h3 {
+        color: green;
+        margin-top: calc(7.5rem*1.3);
+        font-size: calc(0.75rem*1.3);
+        margin-bottom: calc(2.5rem*1.3);
+    }
+
+    .sample-course__div2 h2 {
+        color: #fff;
+        margin-top: calc(1.9rem*1.3);
+        font-size: calc(2.2rem*1.3);
+        margin-bottom: calc(2.5rem*1.3);
+        width: calc(18.75rem*1.3);
+    }
+
+    .sample-course__div2 p {
+        color: #fff;
+        font-size: calc(0.75rem*1.3);
+        margin-bottom: calc(2.5rem*1.3);
+        line-height: calc(1.9rem*1.3);
+        width: calc(15.6rem*1.3);
+    }
+
+    .sample-course__div2 button {
+        color: #fff;
+        font-size: calc(0.75rem*1.3);
+        margin-bottom: calc(6.25rem*1.3);
+        background-color: green;
+        padding: calc(1.3rem*1.3) calc(2.5rem*1.3);
+        border: 0px;
+    }
+
+    /* ####################### NEW COURSES SECTION ############### */
+    .new-courses-section {
+        background-color: #535353;
+    }
+
+    .new-courses__slider-top {
+        display: flex;
+        justify-content: space-between;
+        margin-top: calc(3.1rem*1.3);
+    }
+
+    .new-courses__slider-top h2 {
+        color: purple;
+        font-size: calc(3.1rem*1.3);
+        width: calc(18.75rem*1.3);
+        background-color: #fff;
+        margin-bottom: calc(2.5rem*1.3);
+    }
+
+    .new-courses__slider-top div button {
+        padding: calc(1.3rem*1.3) calc(2.5rem*1.3);
+        background-color: green;
+        border: 0px;
+        margin-left: 1px;
+    }
+
+    .new-courses__slider-top div {
+        display: flex;
+        align-items: center;
+    }
+
+    .new-courses__courses-slide {
+        display: flex;
+        justify-content: center;
+    }
+
+    .new-courses__course-div {
+        padding: calc(0.6rem*1.3);
+        border: 1px solid #000;
+        background-color: #fff;
+
+    }
+
+    .new-courses__image {
+        background-color: #000;
+        height: calc(12.5rem*1.3);
+        width: calc(18.75rem*1.3);
+    }
+
+    .new-courses__logo {
+        background-color: aqua;
+        width: calc(3.1rem*1.3);
+        height: calc(3.1rem*1.3);
+    }
+
+    .new-courses__details h3 {
+        margin-top: calc(1.3rem*1.3);
+        margin-bottom: calc(1.3rem*1.3);
+        color: purple;
+        font-size: calc(1.56rem*1.3);
+        width: calc(12.5rem*1.3);
+    }
+
+    .new-courses__details p {
+        margin-bottom: calc(1.3rem*1.3);
+        color: #535353;
+        font-size: calc(0.9rem*1.3);
+
+    }
+
+    .new-courses__details div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* ################# TESTIMONIAL SECTION ########## */
+    .testimonial {
+        /* background-color: #000; */
+        display: flex;
+
+    }
+
+    .testimonial__div1 {
+        flex: 1;
+        background-color: gray;
+    }
+
+    .testimonial__div2 {
+        flex: 1;
+        background-color: #000;
+    }
+
+    #quotes {
+        font-size: calc(5rem*1.3);
+        color: green;
+        margin-top: calc(5rem*1.3);
+    }
+
+    .testimonial__div1 p {
+        font-size: calc(1.75rem*1.3);
+        line-height: calc(2.5rem*1.3);
+        background-color: #fff;
+        width: 3calc(1.25rem*1.3);
+        margin-bottom: calc(1.9rem*1.3);
+    }
+
+    .testimonial__user {
+        color: #535353;
+        font-size: 16px*1.3;
+        margin-bottom: calc(2.5rem*1.3);
+    }
+
+    .testimonial__buttons button {
+        padding: calc(1.3rem*1.3) calc(2.5rem*1.3);
+        background-color: green;
+        border: 0px;
+        margin-left: 1px;
+        margin-bottom: calc(5rem*1.3);
+    }
+
+    .testimonial__div2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .testimonial__img-div1 {
+        width: calc(25rem*1.3);
+        height: calc(25rem*1.3);
+        border-radius: calc(25rem*1.3);
+        border: 2px dashed red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .testimonial__img-div2 {
+        width: calc(18.75rem*1.3);
+        height: calc(18.75rem*1.3);
+        border-radius: calc(18.75rem*1.3);
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+    /* ################### COMPANIES SECTION ############## */
+    .companies {
+        display: flex;
+    }
+
+    /* ######################## FOOTER ################################  */
+    footer {
+        background-color: #1c2434;
+    }
+
+    .footer__top {
+        padding: calc(2.5rem*1.3) calc(12rem*1.3);
+        display: flex;
+        margin-bottom: calc(2.5rem*1.3);
+    }
+
+    .footer__bottom {
+        background-color: #2c2c44;
+        padding: calc(1.3rem*1.3) calc(12rem*1.3);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__div1 {
+        flex: 0.25;
+        color: #fff;
+        font-size: calc(.75rem*1.3);
+        font-weight: 600;
+    }
+
+    .footer__div2 {
+        flex: 0.15;
+    }
+
+    .footer__div2 h3 {
+        margin-top: calc(1.3rem*1.3);
+        color: #fff;
+        font-size: calc(1.1rem*1.3);
+        margin-bottom: calc(1.9rem*1.3);
+    }
+
+    .footer__div2 ul {
+        color: #aaa;
+        list-style: none;
+        line-height: calc(1.9rem*1.3);
+    }
+
+    .footer__div3 {
+        flex: 0.15;
+        margin-right: calc(3.75rem*1.3);
+    }
+
+    .footer__div3 h3 {
+        margin-top: calc(1.3rem*1.3);
+        color: #fff;
+        margin-bottom: calc(1.9rem*1.3);
+        font-size: calc(1.1rem*1.3);
+    }
+
+    .footer__div3 ul {
+        color: #aaa;
+        list-style: none;
+        line-height: calc(1.9rem*1.3);
+    }
+
+    .footer__div4 {
+        flex: 0.6;
+    }
+
+    .footer__div4 h3 {
+        margin-top: calc(1.3rem*1.3);
+        color: #fff;
+        margin-bottom: calc(1.9rem*1.3);
+        font-size: calc(1.1rem*1.3);
+    }
+
+    .footer__input {
+        /* background-color: #302c44; */
+        padding: calc(0.6rem*1.3);
+        /* border: 1px solid #fff; */
+        width: fit-content;
+        display: flex;
+    }
+
+    .footer__input input {
+        background-color: #2c2c44;
+        padding: calc(0.6rem*1.3);
+        border: 0px;
+        border-left: 1px solid #aaa;
+        border-bottom: 1px solid #aaa;
+        width: calc(22.5rem*1.3);
+        height: calc(.75rem*1.3);
+        margin-right: calc(0.6rem*1.3);
+
+    }
+
+    .footer__input ::placeholder {
+        color: #fff;
+        font-weight: 400;
+        font-size: calc(0.9rem*1.3);
+    }
+
+    .footer__input button {
+        background-color: #1c2434;
+        padding: calc(1.3rem*1.3) calc(2.5rem*1.3);
+        border: 1px solid green;
+        color: #fff;
+        font-weight: 600;
+        font-size: calc(0.9rem*1.3);
+    }
+
+    .footer__bottom div {
+        color: #fff;
+        font-size: calc(0.9rem*1.3);
+    }
+
+    .footer__buttons {
+        display: flex;
+        justify-content: end;
+    }
+
+    .footer__buttons button {
+
+        justify-content: end;
+    }
+}

@@ -15,6 +15,7 @@
     --color-white-two: rgba(249, 249, 249, 1);
     --color-black-one: #000;
     --color-purple-one: #6c5cb4;
+    --color-purple-two: #242434;
     --color-grey-one: #ccc;
     --gradient-one: linear-gradient(90deg, rgba(118, 100, 197, 1),hsla(251, 37%, 50%, 0.5), hsla(251, 37%, 50%, 0.1));
     --gradient-two: linear-gradient(90deg, rgba(153, 100, 197, 0.25), rgba(153, 100, 197, 0.25));
@@ -40,11 +41,11 @@ body{
     /* ####################### GENERAL STYLES ###################### */
     section {
         height: fit-content;
-        padding: 2.5rem 12rem;
+        padding: 2.5rem 9rem;
     }
 
     header {
-        padding: 1.3rem 12rem;
+        padding: 1.3rem 9rem;
         /* background-color: black; */
         height: fit-content;
         position: relative;
@@ -808,13 +809,13 @@ body{
 
     /* ######################## FOOTER ################################  */
     footer {
-        background-color: #1c2434;
+        background-color: var(--color-purple-two);
     }
 
     .footer__top {
-        padding: 2.5rem 12rem;
+        padding: 2.5rem 9rem;
         display: flex;
-        margin-bottom: 2.5rem;
+        gap: 1rem;
     }
 
     .footer__bottom {
@@ -825,74 +826,57 @@ body{
     }
 
     .footer__div1 {
-        flex: 0.25;
+        flex: 0.2;
         color: #fff;
-        font-size: .75rem;
+        font-size: 2.5rem;
         font-weight: 600;
+        text-align: start;
+        background-color: #000;
     }
 
     .footer__div2 {
-        flex: 0.15;
+        flex: 0.2;
     }
 
-    .footer__div2 h3 {
+    footer h3 {
         margin-top: 1.3rem;
         color: #fff;
-        font-size: 1.1rem;
-        margin-bottom: 1.9rem;
+        font-size: 1rem;
+        width: fit-content;
+        margin-bottom: 1.4rem;
     }
 
-    .footer__div2 ul {
+    footer ul {
         color: #aaa;
         list-style: none;
         line-height: 1.9rem;
+        font-size: 1rem;
     }
-
-    .footer__div3 {
-        flex: 0.15;
-        margin-right: 3.75rem;
-    }
-
-    .footer__div3 h3 {
-        margin-top: 1.3rem;
-        color: #fff;
-        margin-bottom: 1.9rem;
-        font-size: 1.1rem;
-    }
-
-    .footer__div3 ul {
-        color: #aaa;
-        list-style: none;
-        line-height: 1.9rem;
+    footer li {
+        font-size: 0.8rem;
     }
 
     .footer__div4 {
-        flex: 0.6;
+        flex: 0.4;
     }
 
-    .footer__div4 h3 {
-        margin-top: 1.3rem;
-        color: #fff;
-        margin-bottom: 1.9rem;
-        font-size: 1.1rem;
-    }
 
     .footer__input {
         /* background-color: #302c44; */
-        padding: 0.6rem;
+        padding: 0.6rem 0;
         /* border: 1px solid #fff; */
         width: fit-content;
         display: flex;
     }
 
     .footer__input input {
-        background-color: #2c2c44;
+        background-color: #33334b;
         padding: 0.6rem;
         border: 0px;
         border-left: 1px solid #aaa;
         border-bottom: 1px solid #aaa;
         width: 22.5rem;
-        height: .75rem;
+        height: 3.75rem;
         margin-right: 0.6rem;
 
     }
@@ -906,7 +890,7 @@ body{
     .footer__input button {
         background-color: #1c2434;
         padding: 1.3rem 2.5rem;
-        border: 1px solid green;
+        border: 1px solid var(--color-green-one);
         color: #fff;
         font-weight: 600;
         font-size: 0.9rem;
